@@ -1,0 +1,10 @@
+.toDoHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.toDoHeader h1 {
+  color: white;
+}

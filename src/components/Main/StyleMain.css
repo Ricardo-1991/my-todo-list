@@ -1,0 +1,17 @@
+.toDoMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.toDoMain input {
+  width: 300px;
+}
+
+
+/* .toDoMain button {
+
+  
+}
+ */
