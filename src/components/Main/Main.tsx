@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../Main/StyleMain.css'
 
-import { BsFillXSquareFill, BsCheckSquareFill } from 'react-icons/bs'
+import { BsTrash } from 'react-icons/bs'
 
 interface Tasks {
   id: number
@@ -74,7 +74,7 @@ export function Main() {
                 </p>
               </div>
               <button type="submit" onClick={() => handleTaskRemove(task.id)}>
-                <BsFillXSquareFill size={25} color="red" />
+                <BsTrash size={23} color="red" />
               </button>
             </div>
           </li>

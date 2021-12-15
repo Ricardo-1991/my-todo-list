@@ -18,6 +18,8 @@
   color: white;
   font-size: 1.3rem;
   border: none; 
+  cursor: pointer;
+
 }
 
 .input-class::-webkit-input-placeholder { /* Chrome, Safari, Opera */
@@ -74,6 +76,7 @@ input[type="checkbox"] + label::before {
 .list-container button {
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 .task-list  {
