@@ -9,6 +9,22 @@
   width: 300px;
 }
 
+.task-list li {
+  list-style: none;
+}
+
+.task-list div {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.isComplete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 
 /* .toDoMain button {
 

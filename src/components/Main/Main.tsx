@@ -23,6 +23,24 @@ export function Main() {
     setTasks(oldState => [...oldState, newTask])
   }
 
+  function handleCheck(id: number) {
+    const filteredTask = tasks.map(tasks =>
+      tasks.id === id
+        ? {
+            ...tasks,
+            isComplete: !tasks.isComplete
+          }
+        : tasks
+    )
+
+    setTasks(filteredTask)
+  }
+
+  function handleTaskRemove(id: number) {
+    const filteredTask = tasks.filter(tasks => tasks.id !== id)
+    setTasks(filteredTask)
+  }
+
   return (
     <main>
       <div className="toDoMain">
@@ -38,11 +56,19 @@ export function Main() {
         <button onClick={handleNewTask}>Listar Atividade</button>
       </div>
 
-      <ul>
+      <ul className="task-list">
         {tasks.map(task => (
           <li key={task.id}>
             <div>
-              <p>{task.title}</p>
+              <p className={task.isComplete ? 'isComplete' : ''}>
+                {task.title}
+              </p>
+              <button type="submit" onClick={() => handleCheck(task.id)}>
+                Checked
+              </button>
+              <button type="submit" onClick={() => handleTaskRemove(task.id)}>
+                Remover Atividade
+              </button>
             </div>
           </li>
         ))}
