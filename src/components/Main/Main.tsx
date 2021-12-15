@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import '../Main/StyleMain.css'
 
+import { BsFillXSquareFill, BsCheckSquareFill } from 'react-icons/bs'
+
 interface Tasks {
   id: number
   title: string
@@ -50,24 +52,29 @@ export function Main() {
             name="text"
             value={newTitle}
             onChange={e => setNewTitle(e.target.value)}
-            placeholder="Insira uma atividade"
+            className="input-class"
+            placeholder="Adicione uma atividade..."
           />
         </form>
-        <button onClick={handleNewTask}>Listar Atividade</button>
+        <button onClick={handleNewTask}>+</button>
       </div>
 
-      <ul className="task-list">
+      <ul className="list-container">
         {tasks.map(task => (
           <li key={task.id}>
-            <div>
-              <p className={task.isComplete ? 'isComplete' : ''}>
-                {task.title}
-              </p>
-              <button type="submit" onClick={() => handleCheck(task.id)}>
-                Checked
-              </button>
+            <div className="task-list">
+              <div className="task-checkBox">
+                <input type="checkbox" />
+                <label
+                  className={task.isComplete ? 'task-checked' : ''}
+                  onClick={() => handleCheck(task.id)}
+                ></label>
+                <p className={task.isComplete ? 'isComplete' : ''}>
+                  {task.title}
+                </p>
+              </div>
               <button type="submit" onClick={() => handleTaskRemove(task.id)}>
-                Remover Atividade
+                <BsFillXSquareFill size={25} color="red" />
               </button>
             </div>
           </li>

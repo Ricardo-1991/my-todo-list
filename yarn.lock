@@ -523,6 +523,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+icons@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/icons/-/icons-1.0.0.tgz#260a56eef0acf327085adf7017a3032cdaef2126"
+  integrity sha512-7POum3AHKovjEEXg4ITL2opTzGjnN2UnUIhv5LsUX+SjKBsFMjRyANShrCubt0KQdNdcX2wAym+JXOt6LceuYA==
+
 is-core-module@^2.2.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.8.0.tgz#0321336c3d0925e497fd97f5d95cb114a5ccd548"

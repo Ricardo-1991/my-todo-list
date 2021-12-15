@@ -2,5 +2,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
+  background-color: ghostwhite;
+}
+
+.toDoHeader h1 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.7rem;
+  color: #696969;
 }
