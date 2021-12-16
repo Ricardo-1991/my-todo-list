@@ -2,5 +2,10 @@
   margin: 20px auto;
   width: 600px;
   height: 700px;
-  /* whitesmoke */
+}
+
+@media only screen and (max-width: 605px){
+  .toDoContainer {
+    width: 450px;
+  }
 }
