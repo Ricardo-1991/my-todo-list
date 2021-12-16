@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
+  width: 100%;
 }
 
 .toDoMain input {
@@ -100,6 +101,7 @@ input[type="checkbox"] + label::before {
 }
 
 /* ----  */
+
 
 
 
