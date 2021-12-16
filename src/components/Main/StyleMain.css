@@ -110,20 +110,10 @@ input[type="checkbox"] + label::before {
   }
 
   .toDoMain input {
-    /* width: 400px;
-    padding: 0.6rem;
-    border: 1px solid darkgrey;  */
     width: 300px;
   }
   
   .toDoMain button {
-    /* width: 40px;
-    padding: 0.4rem;
-    background-color:deepskyblue;
-    color: white;
-    font-size: 1.3rem;
-    border: none; 
-    cursor: pointer; */
     width: 40px;
   
   }
