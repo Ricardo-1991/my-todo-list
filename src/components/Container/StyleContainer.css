@@ -7,5 +7,6 @@
 @media only screen and (max-width: 605px){
   .toDoContainer {
     width: 450px;
+    margin: 0 auto;
   }
 }
