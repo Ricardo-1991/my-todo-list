@@ -23,6 +23,7 @@ export function Main() {
     }
 
     setTasks(oldState => [...oldState, newTask])
+    setNewTitle('')
   }
 
   function handleCheck(id: number) {
